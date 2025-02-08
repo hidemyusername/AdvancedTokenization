@@ -1,0 +1,11 @@
+# Dockerfile for integrating AdvancedTokenization into OSS-Fuzz
+
+FROM gcr.io/oss-fuzz-base/base-builder
+
+WORKDIR /src
+
+# Copy all project files into the container
+COPY . .
+
+# Run the build script to compile the fuzz target
+RUN ./build.sh

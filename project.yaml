@@ -1,0 +1,5 @@
+project: AdvancedTokenization
+language: c
+oss-fuzz-project: AdvancedTokenization
+maintainers:
+  - hidemyemailgithub@proton.me  # Replace with your email or the team's email

@@ -9,3 +9,18 @@ COPY . .
 
 # Run the build script to compile the fuzz target
 RUN ./build.sh
+
+# -------------------------------------------------------------------------
+# To run the fuzz target interactively (for testing), you can use:
+#
+#   ./out/advanced_fuzz_target -max_len=4096 -runs=1000
+#
+# This command limits the maximum input length to 4096 bytes and executes 1000 runs.
+#
+# To reproduce a specific crash, assuming a crash file was generated (e.g., crash-<hash>),
+# run:
+#
+#   ./out/advanced_fuzz_target < crash-<hash>
+#
+# This feeds the crash input back into the fuzz target to reproduce the failure.
+# -------------------------------------------------------------------------

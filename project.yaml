@@ -1,5 +1,6 @@
 project: AdvancedTokenization
 language: c
 oss-fuzz-project: AdvancedTokenization
+main_repo: https://github.com/hidemyusername/AdvancedTokenization
 maintainers:
-  - hidemyemailgithub@proton.me  # Replace with your email or the team's email
+  - hidemyemailgithub@proton.me
